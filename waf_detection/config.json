@@ -1,0 +1,37 @@
+{
+    "timeout": 10,
+    "delay": 0,
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "Accept-Language": "zh-CN,zh;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6",
+        "Accept-Encoding": "identity"
+    },
+    "encoding_translations": {
+        "windows-874": "iso-8859-11",
+        "utf-8859-1": "utf8",
+        "en_us": "utf8",
+        "macintosh": "iso-8859-1",
+        "euc_tw": "big5_tw",
+        "th": "tis-620",
+        "unicode": "utf8",
+        "utc8": "utf8",
+        "ebcdic": "ebcdic-cp-be",
+        "iso-8859": "iso8859-1",
+        "iso-8859-0": "iso8859-1",
+        "ansi": "ascii",
+        "gbk2312": "gbk",
+        "windows-31j": "cp932",
+        "en": "us"
+    },
+    "generic_protection_keywords": [
+        "rejected", "forbidden", "suspicious", "malicious", "captcha", "invalid", 
+        "your ip", "please contact", "terminated", "protected", "unauthorized", 
+        "blocked", "protection", "incident", "denied", "detected", "dangerous", 
+        "firewall", "fw_block", "unusual activity", "bad request", "request id", 
+        "injection", "permission", "not acceptable", "security policy", "security reasons"
+    ],
+    "generic_protection_regex": "(?i)\\b(%s)\\b",
+    "generic_error_message_regex": "\\b[A-Z][\\w, '-]*(protected by|security|unauthorized|detected|attack|error|rejected|allowed|suspicious|automated|blocked|invalid|denied|permission)[\\w, '!-]*",
+    "heuristic_payload": "1 AND 1=1 UNION ALL SELECT 1,NULL,'<script>alert(\"XSS\")</script>',table_name FROM information_schema.tables WHERE 2>1--/**/; EXEC xp_cmdshell('cat ../../../etc/passwd')#"
+}
