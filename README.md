@@ -16,7 +16,13 @@
 
 ## 安装方法
 
-python ≥ 3.10，下载到本地执行
+python ≥ 3.10
+
+```shell
+git clone https://github.com/yanhuayang2/ptct.git
+```
+
+下载到本地执行
 
 ```sh
 pip install -r requirements.txt
@@ -83,10 +89,12 @@ python ptct.py -s url.com
 
 ### 未完成的内容
 
-1.WAF探测功能参考identYwaf，需要进一步完善。
-2.部分参数是固定值，未能从用户获取。
-3.异常处理需完善。
-4.实现批量检测任务。
+1. WAF探测功能参考identYwaf，需进一步完善。
+2. 部分参数是固定值，未能从用户获取。
+
+3. 异常处理需完善。
+
+4. 实现批量检测任务。
 
 ----
 
